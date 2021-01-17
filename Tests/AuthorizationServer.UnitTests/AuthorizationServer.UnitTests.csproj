@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentAssertions" Version="5.10.3" />
+        <PackageReference Include="NUnit" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Src\AuthorizationServer.Application\AuthorizationServer.Application.csproj" />
+      <ProjectReference Include="..\..\Src\AuthorizationServer.Common\AuthorizationServer.Common.csproj" />
+      <ProjectReference Include="..\..\Src\AuthorizationServer.Domain\AuthorizationServer.Domain.csproj" />
+      <ProjectReference Include="..\..\Src\AuthorizationServer.Infrastructure\AuthorizationServer.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\Src\AuthorizationServer.Persistence\AuthorizationServer.Persistence.csproj" />
+    </ItemGroup>
+
+</Project>
