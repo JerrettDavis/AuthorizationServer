@@ -3,6 +3,20 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>AuthorizationServer</Title>
+        <Authors>Jerrett Davis</Authors>
+        <Description>A simple, bolt-on permissions system.</Description>
+        <Copyright>2021</Copyright>
+        <PackageProjectUrl>https://github.com/JerrettDavis/AuthorizationServer</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/JerrettDavis/AuthorizationServer/blob/master/LICENSE.md</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/JerrettDavis/AuthorizationServer</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+        <PackageTags>Authorization, Authentication, Core</PackageTags>
+        <Company>Jerrett Davis</Company>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+        <NeutralLanguage>en-US</NeutralLanguage>
     </PropertyGroup>
 
     <ItemGroup>
