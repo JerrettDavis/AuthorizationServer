@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizationServer", "Src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizationServer.UnitTests", "Tests\AuthorizationServer.UnitTests\AuthorizationServer.UnitTests.csproj", "{C8792FA0-8BD1-451F-8E24-65871544FE32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizationServer.EntityFramework", "Src\AuthorizationServer.EntityFramework\AuthorizationServer.EntityFramework.csproj", "{F27C0470-5BF5-4AB5-ADBD-C5AB0368E4AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{C8792FA0-8BD1-451F-8E24-65871544FE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8792FA0-8BD1-451F-8E24-65871544FE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8792FA0-8BD1-451F-8E24-65871544FE32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F27C0470-5BF5-4AB5-ADBD-C5AB0368E4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F27C0470-5BF5-4AB5-ADBD-C5AB0368E4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F27C0470-5BF5-4AB5-ADBD-C5AB0368E4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F27C0470-5BF5-4AB5-ADBD-C5AB0368E4AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
