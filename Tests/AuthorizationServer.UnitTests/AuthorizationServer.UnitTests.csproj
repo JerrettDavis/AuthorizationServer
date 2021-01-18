@@ -16,11 +16,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Src\AuthorizationServer.Application\AuthorizationServer.Application.csproj" />
-      <ProjectReference Include="..\..\Src\AuthorizationServer.Common\AuthorizationServer.Common.csproj" />
-      <ProjectReference Include="..\..\Src\AuthorizationServer.Domain\AuthorizationServer.Domain.csproj" />
-      <ProjectReference Include="..\..\Src\AuthorizationServer.Infrastructure\AuthorizationServer.Infrastructure.csproj" />
-      <ProjectReference Include="..\..\Src\AuthorizationServer.Persistence\AuthorizationServer.Persistence.csproj" />
+      <ProjectReference Include="..\..\Src\AuthorizationServer\AuthorizationServer.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="AuthorizationServer" />
     </ItemGroup>
 
 </Project>
