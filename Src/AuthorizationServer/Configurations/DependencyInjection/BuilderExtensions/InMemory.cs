@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
-using AuthorizationServer;
 using AuthorizationServer.Common;
 using AuthorizationServer.Common.Interfaces;
 using AuthorizationServer.InMemory.Roles;
 using AuthorizationServer.InMemory.Users;
 using AuthorizationServer.Models;
-using AuthorizationServer.RunTime.Client;
 using Microsoft.Extensions.Configuration;
 
 // ReSharper disable once CheckNamespace
@@ -17,14 +15,13 @@ namespace Microsoft.Extensions.DependencyInjection
             this IServiceCollection services,
             IConfiguration configuration)
         {
-            services.AddInMemoryRoles(configuration)
+            services
+                .AddAuthorizationServer()
+                .AddInMemoryRoles(configuration)
                 .AddInMemoryRoleStore()
                 .AddInMemoryUsers(configuration)
                 .AddInMemoryUserStore()
                 .AddInMemoryUserEvaluator();
-
-            services.AddTransient<IAuthorizationServerRuntimeClient, AuthorizationServerRuntimeClient>();
-            services.AddAuthorizationPermissionPolicies();
 
             return services;
         }
